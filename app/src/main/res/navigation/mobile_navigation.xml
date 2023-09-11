@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_llamada">
+
+    <fragment
+        android:id="@+id/nav_llamada"
+        android:name="com.example.tp4_android.ui.llamada.HomeFragment"
+        android:label="Llamada"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_foto"
+        android:name="com.example.tp4_android.ui.foto.GalleryFragment"
+        android:label="MiFoto"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_salir"
+        android:name="com.example.tp4_android.ui.slideshow.SlideshowFragment"
+        android:label="Salir"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
